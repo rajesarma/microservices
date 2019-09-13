@@ -1,15 +1,13 @@
-package com.hcl.zipkin;
+package com.hcl.zipkinclient;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import zipkin.server.EnableZipkinServer;
 
 @SpringBootApplication
-@EnableZipkinServer
-public class ZipkinApplication {
+public class ZipkinClientApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(ZipkinApplication.class, args);
+        SpringApplication.run(ZipkinClientApplication.class, args);
     }
 
 }

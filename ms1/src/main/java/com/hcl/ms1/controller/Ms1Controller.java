@@ -25,7 +25,7 @@ public class Ms1Controller {
 
     @GetMapping("/ms-1/get-data3")
     public ResponseEntity<Message> getThirdData() {
-        Message message = ms1Service.getData();
+        Message message = ms1Service.getThirdData();
         return new ResponseEntity<>(message, HttpStatus.OK);
     }
 }

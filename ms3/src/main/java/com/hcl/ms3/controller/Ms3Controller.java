@@ -20,7 +20,7 @@ public class Ms3Controller {
         logger.info(String.format("Post Filter: %s request to %s", request.getMethod(), request.getRequestURL().toString()));
 
 
-        Message message = new Message("Test", "Getting from MS3 Test Description");
+        Message message = new Message("Test", "Getting from MS3 Third Test Description");
         return new ResponseEntity<>(message, HttpStatus.OK);
     }
 }

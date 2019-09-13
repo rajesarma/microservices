@@ -14,8 +14,9 @@ public class Ms1Service {
     private Ms3ServiceProxy ms3ServiceProxy;
 
     @Autowired
-    Ms1Service(final Ms1ServiceFallBack ms2ServiceProxy) {
+    Ms1Service(final Ms1ServiceFallBack ms2ServiceProxy, Ms3ServiceProxy ms3ServiceProxy) {
         this.ms2ServiceProxy = ms2ServiceProxy;
+        this.ms3ServiceProxy = ms3ServiceProxy;
     }
 
     public Message getData() {
